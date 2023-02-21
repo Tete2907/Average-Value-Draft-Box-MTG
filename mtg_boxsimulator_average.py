@@ -8,9 +8,10 @@ from scipy.stats import poisson
 import matplotlib.pyplot as plt
 
 # Initialize the Chrome browser
+webpage = input("Enter the webpage of the simulator with the desired set (e.g:https://www.mtgboxsim.com/set/one/draft for the set of Phyrexia all will be one) :")
 data = np.array([])
 driver = webdriver.Chrome()
-driver.get("https://www.mtgboxsim.com/set/one/draft")
+driver.get(webpage)
 time.sleep(5)
 for i in range(100):
     # Press the button
