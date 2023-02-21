@@ -12,7 +12,7 @@ data = np.array([])
 driver = webdriver.Chrome()
 driver.get("https://www.mtgboxsim.com/set/one/draft")
 time.sleep(5)
-for i in range(5):
+for i in range(100):
     # Press the button
     button = driver.find_element(By.XPATH, '//button[@class="Simulation_secondaryCTA__2ULTw"]')
     button.click()
